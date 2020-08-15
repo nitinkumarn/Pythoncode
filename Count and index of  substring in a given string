@@ -1,0 +1,9 @@
+s=input('Enter the given string : ')
+subs = input("Enter the substring: ")
+i=s.find(subs)
+if i==-1:
+    print('String doesnot contains substring')
+while i!=-1:
+    print('{} is present at index {}'.format(subs,i))
+    i = s.find(subs,i+len(subs),len(s))
+print('The number of occurence of substring in given string is {}'.format(s.count(subs)))
