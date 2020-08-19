@@ -1,0 +1,19 @@
+# by using slice operator
+s = input('Enter any String : ')
+rev_s = s[::-1]
+print(rev_s)
+
+
+#by using reversed function
+r = reversed(s)
+print(type(r))
+output = ''.join(r)
+print(output)
+
+#by using while loop
+output = ''
+i = len(s)-1
+while i>=0:
+    output = output+s[i]
+    i = i -1 
+print('The reversed string',output)
