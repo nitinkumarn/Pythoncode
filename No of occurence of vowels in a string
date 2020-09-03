@@ -1,0 +1,8 @@
+s=input('Enter any string: ')
+d={}
+V=['a','e','i','o','u','A','E','I','O','U']
+for ch in s:
+    if ch in V:
+        d[ch] = d.get(ch,0)+1
+for k,v in sorted(d.items()):
+    print('{} vowel occurs {} times'.format(k,v))
